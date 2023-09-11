@@ -11,7 +11,7 @@ module.exports = {
     filename: '[name].js',
   },
   devServer: {
-    static: './dist',
+    static: './dist/index.html',
   },
   plugins: [
     new HtmlWebpackPlugin({
