@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Calculator IE Garments</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+</head>
+<body>
+    <header>
+        <h1>Industrial Engineering Calculator</h1>
+    </header>
+    
+    <main>
+        <section class="categories">
+            <label for="category-select">Select a Category:</label>
+            <select id="category-select">
+                <option value="time-motion">Time and Motion Analysis</option>
+                <option value="production-efficiency">Production Efficiency</option>
+                <!-- Add other categories here -->
+            </select>
+        </section>
+        
+        <section id="sub-category-select" class="hidden">
+            <label for="sub-category">Select a Sub-Category:</label>
+            <select id="sub-category">
+                <!-- Sub-category options will be dynamically generated here -->
+            </select>
+        </section>
+        
+        <section id="equation-selection">
+            <h2>Select an Equation:</h2>
+            <div class="equation-list">
+                <div class="equation-item" data-equation="basic-time-study-equation1">
+                    Basic Time Study - Equation 1
+                </div>
+                <!-- Add other equation items here -->
+            </div>
+            
+            <div id="equation-inputs" class="hidden">
+                <!-- Equation inputs will be dynamically generated here -->
+            </div>
+            
+            <div id="equation-result" class="hidden">
+                <!-- Equation result will be displayed here -->
+            </div>
+        </section>
+        
+    </main>
+    
+    
+    <footer>
+        <p>&copy; 2023 Industrial Engineering Calculator</p>
+    </footer>
+
+</body>
+</html>
+
+
