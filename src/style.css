@@ -1,0 +1,91 @@
+body,
+h1,
+h2,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+
+/* Navigation bar styles */
+.navbar {
+  display: flex;
+
+  /* background: url(img/logo.svg); */
+  background-size: 70px 70px;
+  background-position-x: left;
+  background-position-y: -3px;
+  background-repeat: no-repeat;
+  font-family: "Roboto", sans-serif;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #dbb021bc;
+  color: white;
+  padding: 10px 20px;
+  box-shadow: 0 2px 5px rgba(255, 255, 255, 0.5);
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+}
+
+.navbar-brand {
+  position: relative;
+  font-size: 24px;
+  font-weight: bold;
+  left: 45px;
+}
+
+.navbar-links {
+  display: flex;
+  position: relative;
+  font-family: "Roboto", sans-serif;
+  list-style: none;
+  gap: 5vw;
+  left: -50px;
+}
+
+.navbar-links li {
+  position: relative;
+}
+
+.navbar-links a {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  transition: color 0.3s;
+}
+
+.navbar-links a:hover {
+  color: rgb(179, 76, 3);
+}
+
+/* Unique navigation effect */
+.navbar-links li::before {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background-color: #f37312;
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: width 0.3s;
+}
+
+.navbar-links li:hover::before {
+  width: 100%;
+}
+
+.empthy {
+  height: 91.8vh;
+}
+
+footer {
+  display: flex;
+  padding-left: 20px;
+  align-items: center;
+  background: rgb(20, 14, 31);
+  color: rgb(240, 231, 231);
+  height: 50px;
+}
