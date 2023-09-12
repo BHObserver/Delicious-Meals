@@ -4,32 +4,24 @@
   box-sizing: border-box;
 }
 
-body,
-h1,
-h2,
-ul,
-li {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+body {
   text-align: center;
 }
 
 /* Navigation bar styles */
 .navbar {
   display: flex;
-
-  /* background: url(img/logo.svg); */
-  background-size: 70px 70px;
-  background-position-x: left;
-  background-position-y: -3px;
+  background: url(assets/logo.png);
+  background-size: 50px 50px;
+  background-position-x: 40px;
+  background-position-y: 1px;
   background-repeat: no-repeat;
   font-family: "Roboto", sans-serif;
   justify-content: space-between;
   align-items: center;
-  background-color: #dbb021bc;
+  background-color: #f25d06a6;
   color: white;
-  padding: 10px 20px;
+  padding: 13px 20px;
   box-shadow: 0 2px 5px rgba(255, 255, 255, 0.5);
   position: fixed;
   width: 100%;
@@ -40,7 +32,7 @@ li {
   position: relative;
   font-size: 24px;
   font-weight: bold;
-  left: 45px;
+  left: 80px;
 }
 
 .navbar-links {
@@ -120,7 +112,7 @@ footer {
 }
 
 .products {
-  padding: 3rem 0;
+  padding: 5rem 0;
 }
 
 .products-center {
