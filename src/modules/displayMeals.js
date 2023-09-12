@@ -4,7 +4,6 @@ const productsDOM = document.querySelector('.products-center');
 const displayMeals = (list) => {
   const productList = list.meals
     .map((item) => {
-      const { idMeal } = item;
       // console.log(idMeal);
       const { strMeal: title } = item;
       const { strMealThumb: img } = item;
@@ -34,7 +33,7 @@ const displayMeals = (list) => {
       const span = btn.querySelector('.btn-span');
       let count = 0;
       count += span.textContent;
-      const newCount = parseInt(count) + 1;
+      const newCount = parseInt(count, 10) + 1;
       span.textContent = `${newCount} likes`;
       localStorage.setItem('likes', JSON.stringify(newCount));
     });
