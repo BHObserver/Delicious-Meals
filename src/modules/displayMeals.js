@@ -8,7 +8,7 @@ const displayMeals = (list) => {
       const { strMeal: title } = item;
       const { strMealThumb: img } = item;
 
-      return ` <div class="single-product">
+      return ` <section class="single-product">
       <img
         src="${img}"
         alt="${title}"
@@ -21,7 +21,7 @@ const displayMeals = (list) => {
         <button class="btn-comment">COMMENTS</button>
         </div>
       </div>
-    </div>`;
+    </section>`;
     })
     .join('');
   productsDOM.innerHTML = `<div class="products-container">
