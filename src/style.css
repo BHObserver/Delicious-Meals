@@ -8,7 +8,7 @@ body {
   /* background: url(./assets/bg.jpg);
   background-repeat: no-repeat;
   background-size: 100% 100%; */
-  background: #f2f2f2;
+  background: aliceblue;
   text-align: center;
 }
 
@@ -23,7 +23,8 @@ body {
   font-family: "Roboto", sans-serif;
   justify-content: space-between;
   align-items: center;
-  background-color: #fffefd;
+  background-color: aliceblue;
+  opacity: 0.6;
   color: rgb(0, 0, 0);
   padding: 13px 20px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
@@ -69,11 +70,11 @@ body {
 
 /* Unique navigation effect */
 .navbar-links li::before {
-  content: '';
+  content: "";
   position: absolute;
   width: 0%;
   height: 2px;
-  background-color: #000000;
+  background-color: #000;
   box-shadow: 1px 1px 1px white;
   bottom: -5px;
   left: 50%;
@@ -92,9 +93,10 @@ footer {
   font-size: 24pt;
   padding-left: 20px;
   align-items: center;
-  background: rgb(20, 14, 31);
-  color: rgb(240, 231, 231);
-  height: 100px;
+  background: rgb(159, 207, 223);
+  opacity: 0.6;
+  color: black;
+  height: 50px;
 }
 
 .title {
@@ -117,13 +119,13 @@ footer {
 }
 
 .title-underline {
-  background-color: rgb(0, 0, 0);
+  background-color: rgb(144, 189, 237);
   height: 0.2rem;
   width: 7rem;
   margin: 0 auto;
   margin-top: 10px;
   margin-bottom: 20px;
-  box-shadow: 1px 1px 1px rgb(255, 255, 255);
+  border-radius: 50%;
 }
 
 .products {
@@ -142,22 +144,19 @@ footer {
   grid-template-columns: repeat(3, 1fr);
 }
 
-
 .img {
   width: 100%;
   display: block;
   object-fit: cover;
   border-radius: 8px 8px 0 0;
-  box-shadow: 2px 1px 2px black;
-  border: 1px solid black;
+  box-shadow: 2px 1px 2px rgb(142, 131, 131);
 }
 
 .product-footer {
-  border: 1px solid black;
   background-color: #f2f2f2c5;
   border-radius: 0 0 8px 8px;
   padding: 10px;
-  box-shadow: 2px 1px 2px black;
+  box-shadow: 2px 1px 2px rgb(142, 131, 131);
 }
 
 .btn-container {
@@ -192,7 +191,6 @@ footer {
   padding: 5px 10px;
   color: white;
 }
-
 
 /* Add Pop-up */
 .hide {
@@ -236,7 +234,6 @@ footer {
   background: #f200ff68;
   border: 1px solid whitesmoke;
   border-radius: 8px 0;
-  
 }
 
 .pop-up::-webkit-scrollbar-track {
@@ -259,7 +256,6 @@ footer {
   text-shadow: 1px 1px 1px black;
 }
 
-
 .img-container {
   display: flex;
   justify-content: flex-end;
@@ -278,7 +274,6 @@ footer {
   border-radius: 4px;
   padding: 10px;
   box-shadow: 1px 2px 4px white;
-  
 }
 
 .img-pop-up {
@@ -342,7 +337,6 @@ footer {
   margin: 5px;
 }
 
-
 .input-container input {
   width: 80%;
   height: 5vh;
@@ -362,6 +356,6 @@ footer {
 }
 
 .submit-btn-container button {
-width: 80px;
-height: 30px;
+  width: 80px;
+  height: 30px;
 }
