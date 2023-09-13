@@ -88,6 +88,9 @@ body {
 
 footer {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24pt;
   padding-left: 20px;
   align-items: center;
   background: rgb(159, 207, 223);
