@@ -5,9 +5,6 @@
 }
 
 body {
-  /* background: url(./assets/bg.jpg);
-  background-repeat: no-repeat;
-  background-size: 100% 100%; */
   background: aliceblue;
   text-align: center;
 }
@@ -198,6 +195,7 @@ footer {
 }
 
 .blur-bg {
+  display: none;
   position: fixed;
   width: 100%;
   height: 100%;
@@ -207,7 +205,6 @@ footer {
   overflow-x: hidden;
   top: 0;
   box-sizing: border-box;
-  display: none;
 }
 
 .pop-up {
@@ -220,7 +217,7 @@ footer {
   width: 50vw;
   height: 90%;
   border-radius: 8px;
-  margin-top: 4vw;
+  margin-top: 4.5vw;
   overflow-y: auto;
   overflow-x: hidden;
 }
@@ -231,13 +228,14 @@ footer {
 }
 
 .pop-up::-webkit-scrollbar-thumb {
-  background: #f200ff68;
-  border: 1px solid whitesmoke;
+  background: rgb(166, 129, 80);
+  border: 1px solid rgb(255, 255, 255);
+  box-shadow: 1px 1px 1px rgb(0, 0, 0);
   border-radius: 8px 0;
 }
 
 .pop-up::-webkit-scrollbar-track {
-  background: linear-gradient(180deg, #e21212, #238fe7, #0dd943, #e7e30d);
+  background: linear-gradient(90deg, #4f4848, #77848e, #414843, #9f9f9c);
   border-radius: 8px 0;
 }
 
@@ -262,6 +260,7 @@ footer {
   position: relative;
   width: 100%;
   margin-top: 30px;
+  margin-bottom: 20px;
   left: -20px;
 }
 
@@ -269,11 +268,10 @@ footer {
   align-content: end;
   position: absolute;
   z-index: 2;
-  width: 20px;
-  height: 20px;
+  width: 30px;
+  height: 30px;
   border-radius: 4px;
-  padding: 10px;
-  box-shadow: 1px 2px 4px white;
+  box-shadow: 1px 2px 4px black;
 }
 
 .img-pop-up {
@@ -296,7 +294,8 @@ footer {
 
 .comments-container h4 {
   border-bottom: 3px solid white;
-  width: 98%;
+  margin-top: 10px;
+  width: 24%;
 }
 
 .comments-container ul {
