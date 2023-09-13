@@ -84,16 +84,11 @@ body {
 }
 
 footer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 24pt;
-  padding-left: 20px;
-  align-items: center;
+  font-size: 16pt;
+  padding: 15px;
   background: rgb(159, 207, 223);
   opacity: 0.6;
   color: black;
-  height: 50px;
 }
 
 .title {
