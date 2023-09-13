@@ -87,11 +87,14 @@ body {
 
 footer {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24pt;
   padding-left: 20px;
   align-items: center;
   background: rgb(20, 14, 31);
   color: rgb(240, 231, 231);
-  height: 50px;
+  height: 100px;
 }
 
 .title {
