@@ -7,12 +7,14 @@ const displayMeals = (list) => {
       // console.log(idMeal);
       const { strMeal: title } = item;
       const { strMealThumb: img } = item;
+      const { idMeal: id } = item;
 
       return ` <section class="single-product">
       <img
         src="${img}"
         alt="${title}"
         class="single-product-img img"
+        data-id='${id}'
       />
       <div class="product-footer">
         <h5 class="name">${title}</h5>
