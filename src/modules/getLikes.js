@@ -1,4 +1,4 @@
-import baseURL from "./baseURL.js";
+import baseURL from './baseURL.js';
 
 const getLikes = async () => {
   const response = await fetch(`${baseURL}/likes/`);
