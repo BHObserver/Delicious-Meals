@@ -1,8 +1,8 @@
-import postLikes from "./postLikes.js";
-import getLikes from "./getLikes.js";
-import displayLikes from "./displayLikes.js";
+import postLikes from './postLikes.js';
+import getLikes from './getLikes.js';
+import displayLikes from './displayLikes.js';
 
-const productsDOM = document.querySelector(".products-center");
+const productsDOM = document.querySelector('.products-center');
 
 // display function
 const displayMeals = (list) => {
@@ -29,14 +29,14 @@ const displayMeals = (list) => {
       </div>
     </div>`;
     })
-    .join("");
+    .join('');
   productsDOM.innerHTML = `<div class="products-container">
   ${productList}
   </div>`;
 
-  const likeBtns = [...document.querySelectorAll(".btn-like")];
+  const likeBtns = [...document.querySelectorAll('.btn-like')];
   likeBtns.forEach((btn) => {
-    btn.addEventListener("click", async (e) => {
+    btn.addEventListener('click', async (e) => {
       const element = e.target;
 
       const mealId = element.dataset.id;
@@ -44,12 +44,12 @@ const displayMeals = (list) => {
 
       const results = await getLikes();
 
-      const btnSpan = element.querySelector(".btn-span");
+      const btnSpan = element.querySelector('.btn-span');
       let count = 0;
       count += btnSpan.textContent;
       const newCount = parseInt(count, 10) + 1;
       btnSpan.textContent = `${newCount} likes`;
-      localStorage.setItem("likes", JSON.stringify(results));
+      localStorage.setItem('likes', JSON.stringify(results));
     });
   });
 };
