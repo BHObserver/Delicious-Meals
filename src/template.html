@@ -10,7 +10,7 @@
 </head>
 <body>
     <div class="blur-bg">
-      <div class="pop-up">
+      <section class="pop-up">
           <div class="img-container">
               <img class="img-pop-up" alt="portfolio-image">
               <img class="close-pop-up" alt="close-button">
@@ -22,23 +22,23 @@
       
           <div class="comments-container">
               <h4>Comments:</h4>
-              <span></span>
-              <ul>
-                  
+              
+              <ul id="commentsList"> <!-- comments will be shown here -->
+
               </ul>
           </div>
       
           <div class="input-container">
               <h2>Add Your Comment</h2>
               <span class="underline"></span>
-                  <input type="text" name="Name" placeholder="Your Name">
-                  <textarea class="slf" placeholder="Share your insights"></textarea>
+                  <input type="text" name="user-name" placeholder="Your Name" id="userNameInput">
+                  <textarea class="" placeholder="Share your insights" id="commentInput"></textarea>
               <div class="submit-btn-container" >
-                  <button type="submit">Comment</button>
+                  <button type="submit" id="submitButton">Comment</button>
               </div>
           </div>
         </div>
-      </div>
+      </section>
     </div>
 
     <header>
