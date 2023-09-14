@@ -203,14 +203,10 @@ footer {
 }
 
 .pop-up {
-  /* background: url(assets/bg.jpg);
-  background-size: 100% 100%;
-  background-repeat: no-repeat; */
   background-color: aliceblue;
   margin: 0 auto;
   max-width: 920px;
   width: 50vw;
-  height: 90%;
   border-radius: 8px;
   margin-top: 4.5vw;
   overflow-y: auto;
@@ -235,9 +231,6 @@ footer {
 }
 
 .pop-up-heading {
-  display: flex;
-  justify-content: center;
-  align-content: center;
   max-width: 589px;
   max-height: 120px;
   color: black;
@@ -279,8 +272,12 @@ footer {
 }
 
 .comments-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: flex-start;
   margin-left: 10px;
-  height: 300px;
+  height: 100%;
   font-size: 2vw;
   font-family: "Inter", sans-serif;
   color: black;
@@ -304,6 +301,14 @@ footer {
   list-style-type: none;
 }
 
+#commentsList {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  gap: 30px;
+}
+
 .input-container {
   display: flex;
   flex-direction: column;
@@ -313,6 +318,7 @@ footer {
   width: 100%;
   gap: 1vw;
   font-size: 2vw;
+  margin-top: 40px;
   margin-right: 0.7vw;
   font-family: sans-serif;
   color: black;
@@ -334,11 +340,13 @@ footer {
 .input-container input {
   width: 80%;
   height: 5vh;
+  padding: 5px;
 }
 
 .input-container textarea {
   width: 80%;
   height: 15vh;
+  padding: 5px;
 }
 
 .submit-btn-container {
