@@ -1,7 +1,7 @@
 <html>
-<head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title></title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,7 +13,7 @@
       <div class="pop-up">
           <div class="img-container">
               <img class="img-pop-up" alt="portfolio-image">
-              <img src="./assets/cancel-icon.png" class="close-pop-up" alt="close-button">
+              <img class="close-pop-up" alt="close-button">
           </div>
           
           <div class="pop-up-heading">
@@ -22,8 +22,8 @@
       
           <div class="comments-container">
               <h4>Comments:</h4>
-              <span></span>
-              <ul>
+              
+              <ul class="comments" id="commentsList">
                   
               </ul>
           </div>
@@ -31,46 +31,48 @@
           <div class="input-container">
               <h2>Add Your Comment</h2>
               <span class="underline"></span>
-                  <input type="text" name="Name" placeholder="Your Name">
-                  <textarea class="slf" placeholder="Share your insights"></textarea>
+                  <input type="text" name="Name" placeholder="Your Name" id="userNameInput">
+                  <textarea class="slf" placeholder="Share your insights" id="scoreInput"></textarea>
               <div class="submit-btn-container" >
-                  <button type="submit">Comment</button>
+                  <button type="submit" id="submitButton">Comment</button>
               </div>
           </div>
+        </div>
       </div>
-  </div>
+    </div>
 
     <header>
-        <nav class="navbar">
-          <div class="navbar-brand">Delicious Meals</div>
-          <div class="menu-icon">
-            <div class="bar"></div>
-            <div class="bar"></div>
-            <div class="bar"></div>
-          </div>
-          <ul class="navbar-links">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Products</a></li>
-            <li><a href="#">Contact</a></li>
-          </ul>
-        </nav>
-      </header>
-    
+      <nav class="navbar">
+        <div class="navbar-brand">Delicious Meals</div>
+        <div class="menu-icon">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </div>
+        <ul class="navbar-links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li>
+            <a href="#">Meals(<span id="count">13</span>)</a>
+          </li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
     <main>
-        <section class="products">
-      <div>
-        <h2 class="title">Delicious Meals</h2>
-        <div class="title-underline"></div>
-      </div>
+      <section class="products">
+        <div>
+          <h2 class="title">Delicious Meals</h2>
+          <div class="title-underline"></div>
+        </div>
         <div class="products-center"></div>
       </section>
     </main>
-    
-    <footer>
-        <p>&copy; Delicious Meals created by Umuhan and Burhan</p>
-    </footer>
 
-</body>
+    <footer>
+      <p>&copy; Delicious Meals created by Umuhan and Burhan</p>
+    </footer>
+  </body>
 </html>
