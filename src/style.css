@@ -203,10 +203,10 @@ footer {
 }
 
 .pop-up {
-  background: url(assets/pop-bg.jpg);
+  /* background: url(assets/bg.jpg);
   background-size: 100% 100%;
-  background-repeat: no-repeat;
-  background-color: white;
+  background-repeat: no-repeat; */
+  background-color: aliceblue;
   margin: 0 auto;
   max-width: 920px;
   width: 50vw;
@@ -223,9 +223,9 @@ footer {
 }
 
 .pop-up::-webkit-scrollbar-thumb {
-  background: rgb(166, 129, 80);
-  border: 1px solid rgb(255, 255, 255);
-  box-shadow: 1px 1px 1px rgb(0, 0, 0);
+  background: rgb(124, 199, 226);
+  border: 1px solid rgb(230, 194, 16);
+  
   border-radius: 8px 0;
 }
 
@@ -240,7 +240,7 @@ footer {
   align-content: center;
   max-width: 589px;
   max-height: 120px;
-  color: white;
+  color: black;
   width: 100%;
   font-family: "Inter", sans-serif;
   font-weight: 700;
@@ -265,7 +265,7 @@ footer {
   z-index: 2;
   width: 30px;
   height: 30px;
-  border-radius: 4px;
+  border-radius: 8px;
   box-shadow: 1px 2px 4px black;
 }
 
@@ -283,12 +283,12 @@ footer {
   height: 300px;
   font-size: 2vw;
   font-family: "Inter", sans-serif;
-  color: #fff;
-  text-shadow: 1px 1px 1px black;
+  color: black;
+  text-shadow: 1px 1px 1px white;
 }
 
 .comments-container h4 {
-  border-bottom: 3px solid white;
+  border-bottom: 3px solid rgb(0, 0, 0);
   margin-top: 10px;
   width: 24%;
 }
@@ -315,8 +315,8 @@ footer {
   font-size: 2vw;
   margin-right: 0.7vw;
   font-family: sans-serif;
-  color: white;
-  text-shadow: 1px 1px 1px black;
+  color: black;
+  text-shadow: 1px 1px 1px white;
 }
 
 .input-container h2 {
@@ -326,8 +326,8 @@ footer {
 .underline {
   width: 50px;
   height: 3.5px;
-  background: rgb(255, 255, 255);
-  box-shadow: 1px 1px 1px black;
+  background: rgb(0, 0, 0);
+  box-shadow: 1px 1px 1px rgb(255, 255, 255);
   margin: 5px;
 }
 
