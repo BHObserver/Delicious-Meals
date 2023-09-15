@@ -11,13 +11,13 @@ cancelIconContainer.setAttribute('src', cancelIcon);
 const start = async () => {
   const data = await fetchMeals();
   displayMeals(data);
+  itemsCounter();
 };
 
 document.addEventListener('DOMContentLoaded', () => {
   start();
   show();
   submitComment();
-  itemsCounter();
   JSON.parse(localStorage.getItem('likes'));
 });
 
