@@ -12,6 +12,7 @@ const fetchMeals = async () => {
   } catch (error) {
     productsDOM.innerHTML = 'Error detected';
   }
+  return null;
 };
 
 export default fetchMeals;
