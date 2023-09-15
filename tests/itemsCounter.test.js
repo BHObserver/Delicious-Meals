@@ -5,21 +5,39 @@
 const itemsCounter = require("./_mock/itemsCounter.js");
 
 describe("itemsCounter", () => {
-  test("it should count the number of meals", () => {
+  test("Count and update the meals", () => {
     document.body.innerHTML = `
-  <section class="products">
-    <div class="items">Item 1</div>
-    <div class="items">Item 2</div>
-    <div class="items">Item 3</div>
-  </section>
-`;
+      <div class="single-product"></div>
+      <div class="single-product"></div>
+      <div class="single-product"></div>
+      <div id="count"></div>
+    `;
 
-    expect(itemsCounter()).toBe(3);
+    itemsCounter();
+
+    const countElement = document.querySelector("#count");
+    const displayNumber = countElement.textContent;
+    expect(displayNumber).toBe("3");
   });
 
-  test("it should return 0 when no child elements are present", () => {
-    document.body.innerHTML = "";
+  test("Count element with the correct count", () => {
+    itemsCounter();
+    const countElement = document.querySelector("#count");
+    const displayNumber = countElement.textContent;
 
-    expect(itemsCounter()).toBe(0);
+    expect(typeof displayNumber).toBe("string");
+  });
+
+  test("the case when there is no value", () => {
+    document.body.innerHTML = `
+      <div id="count"></div>
+    `;
+
+    itemsCounter();
+
+    const countElement = document.querySelector("#count");
+    const displayNumber = countElement.textContent;
+
+    expect(displayNumber).toBe("0");
   });
 });
