@@ -22,11 +22,11 @@ export default function show() {
         popUpImg.setAttribute('src', imgSrc);
         popUpHeading.innerHTML = `<h2>${title}</h2>`;
         popUp.style.display = 'block';
-        const commentCounting = async () => {
+        const updateCommentCounting = async () => {
           await fetchComments(itemId);
           commentCount();
         };
-        commentCounting();
+        updateCommentCounting();
       }
     });
 
