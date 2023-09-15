@@ -1,10 +1,8 @@
 const itemsCounter = () => {
-  window.addEventListener('load', () => {
-    const lists = document.querySelector('.single-product');
-    const displayNumber = lists.childElementCount;
-    const NumberOfCounts = document.querySelector('#count');
-    NumberOfCounts.textContent = displayNumber;
-  });
+  const lists = document.querySelectorAll('.single-product');
+  const displayNumber = lists.length;
+  const NumberOfCounts = document.querySelector('#count');
+  NumberOfCounts.textContent = displayNumber;
 };
 
 export default itemsCounter;
