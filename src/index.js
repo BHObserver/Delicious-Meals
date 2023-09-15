@@ -4,6 +4,7 @@ import fetchMeals from './modules/fetchMeals.js';
 import displayMeals from './modules/displayMeals.js';
 import show, { cancel } from './modules/commentPopup.js';
 import { submitComment } from './modules/comment.js';
+import itemsCounter from './modules/itemCount.js';
 
 const cancelIconContainer = document.querySelector('.close-pop-up');
 cancelIconContainer.setAttribute('src', cancelIcon);
@@ -16,6 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
   start();
   show();
   submitComment();
+  itemsCounter();
   JSON.parse(localStorage.getItem('likes'));
 });
 
