@@ -277,11 +277,22 @@ footer {
   justify-content: left;
   align-items: flex-start;
   margin-left: 10px;
-  height: 100%;
   font-size: 2vw;
   font-family: "Inter", sans-serif;
   color: black;
   text-shadow: 1px 1px 1px white;
+}
+
+.comment-counter {
+  border: 2px solid #f2f2f2;
+  border-radius: 50%;
+  padding: 3px;
+  margin-left: 7px;
+}
+
+.comment-count {
+  margin-top: 20px;
+  font-size: 12pt;
 }
 
 .comments-container h4 {
@@ -314,7 +325,7 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-bottom: 20px;
+  
   width: 100%;
   gap: 1vw;
   font-size: 2vw;

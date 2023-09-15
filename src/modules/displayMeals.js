@@ -4,11 +4,9 @@ const productsDOM = document.querySelector('.products-center');
 const displayMeals = (list) => {
   const productList = list.meals
     .map((item) => {
-      // console.log(idMeal);
       const { strMeal: title } = item;
       const { strMealThumb: img } = item;
       const { idMeal: id } = item;
-
       return ` <section class="single-product">
       <img
         src="${img}"
@@ -41,5 +39,4 @@ const displayMeals = (list) => {
     });
   });
 };
-
 export default displayMeals;
