@@ -5,7 +5,7 @@ const popUp = document.querySelector('.blur-bg');
 const popUpImg = popUp.querySelector('.img-pop-up');
 const popUpHeading = popUp.querySelector('.pop-up-heading');
 
-let isEventListenerAdded = false; // Flag to track whether the event listener is added
+let isEventListenerAdded = false;
 
 export default function show() {
   if (!isEventListenerAdded) {
@@ -22,7 +22,6 @@ export default function show() {
         popUpImg.setAttribute('src', imgSrc);
         popUpHeading.innerHTML = `<h2>${title}</h2>`;
         popUp.style.display = 'block';
-        // Fetch and display comments when the pop-up loads
         const commentCounting = async () => {
           await fetchComments(itemId);
           commentCount();
@@ -32,7 +31,6 @@ export default function show() {
     });
 
     isEventListenerAdded = true;
-    // Set the flag to true to indicate that the event listener is added
   }
 }
 
