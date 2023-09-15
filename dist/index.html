@@ -10,7 +10,7 @@
 <script defer src="runtime.bundle.js"></script><script defer src="main.bundle.js"></script></head>
 <body>
     <div class="blur-bg">
-      <div class="pop-up">
+      <section class="pop-up">
           <div class="img-container">
               <img class="img-pop-up" alt="portfolio-image">
               <img class="close-pop-up" alt="close-button">
@@ -19,26 +19,27 @@
           <div class="pop-up-heading">
               
           </div>
+
+          <div class="input-container">
+              <h2>Add Your Comment</h2>
+              <span class="underline"></span>
+                  <input type="text" name="user-name" placeholder="Your Name" id="userNameInput">
+                  <textarea class="" placeholder="Share your insights" id="commentInput"></textarea>
+              <div class="submit-btn-container" >
+                <span class="comment-count"></span>
+                  <button type="submit" id="submitButton">Comment</button>
+              </div>
+          </div>
       
           <div class="comments-container">
               <h4>Comments:</h4>
               
-              <ul class="comments" id="commentsList">
-                  
+              <ul id="commentsList">
+
               </ul>
           </div>
-      
-          <div class="input-container">
-              <h2>Add Your Comment</h2>
-              <span class="underline"></span>
-                  <input type="text" name="Name" placeholder="Your Name" id="userNameInput">
-                  <textarea class="slf" placeholder="Share your insights" id="scoreInput"></textarea>
-              <div class="submit-btn-container" >
-                  <button type="submit" id="submitButton">Comment</button>
-              </div>
-          </div>
         </div>
-      </div>
+      </section>
     </div>
 
     <header>
@@ -54,7 +55,7 @@
           <li><a href="#">About</a></li>
           <li><a href="#">Services</a></li>
           <li>
-            <a href="#">Meals(<span id="count">13</span>)</a>
+            <a href="#">Meals(<span id="count"></span>)</a>
           </li>
           <li><a href="#">Contact</a></li>
         </ul>
