@@ -1,4 +1,5 @@
 import { fetchComments } from './comment.js';
+import commentCount from './commentCounter.js';
 
 const popUp = document.querySelector('.blur-bg');
 const popUpImg = popUp.querySelector('.img-pop-up');
@@ -22,11 +23,15 @@ export default function show() {
         popUpHeading.innerHTML = `<h2>${title}</h2>`;
         popUp.style.display = 'block';
         // Fetch and display comments when the pop-up loads
-        fetchComments(itemId);
+        const commentCounting = async () => {
+          await fetchComments(itemId);
+          commentCount();
+        };
+        commentCounting();
       }
     });
 
-    isEventListenerAdded = true; 
+    isEventListenerAdded = true;
     // Set the flag to true to indicate that the event listener is added
   }
 }
