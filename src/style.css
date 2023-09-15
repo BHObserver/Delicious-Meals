@@ -190,6 +190,7 @@ footer {
 }
 
 .blur-bg {
+  display: none;
   position: fixed;
   width: 100%;
   height: 100%;
@@ -199,17 +200,15 @@ footer {
   overflow-x: hidden;
   top: 0;
   box-sizing: border-box;
-  display: none;
 }
 
 .pop-up {
-  background-color: white;
+  background-color: aliceblue;
   margin: 0 auto;
   max-width: 920px;
   width: 50vw;
-  height: 90%;
   border-radius: 8px;
-  margin-top: 4vw;
+  margin-top: 4.5vw;
   overflow-y: auto;
   overflow-x: hidden;
 }
@@ -220,23 +219,20 @@ footer {
 }
 
 .pop-up::-webkit-scrollbar-thumb {
-  background: #f200ff68;
-  border: 1px solid whitesmoke;
+  background: rgb(124, 199, 226);
+  border: 1px solid rgb(230, 194, 16);
   border-radius: 8px 0;
 }
 
 .pop-up::-webkit-scrollbar-track {
-  background: linear-gradient(180deg, #e21212, #238fe7, #0dd943, #e7e30d);
+  background: linear-gradient(90deg, #4f4848, #77848e, #414843, #9f9f9c);
   border-radius: 8px 0;
 }
 
 .pop-up-heading {
-  display: flex;
-  justify-content: center;
-  align-content: center;
   max-width: 589px;
   max-height: 120px;
-  color: white;
+  color: black;
   width: 100%;
   font-family: "Inter", sans-serif;
   font-weight: 700;
@@ -251,6 +247,7 @@ footer {
   position: relative;
   width: 100%;
   margin-top: 30px;
+  margin-bottom: 20px;
   left: -20px;
 }
 
@@ -258,11 +255,10 @@ footer {
   align-content: end;
   position: absolute;
   z-index: 2;
-  width: 20px;
-  height: 20px;
-  border-radius: 4px;
-  padding: 10px;
-  box-shadow: 1px 2px 4px white;
+  width: 30px;
+  height: 30px;
+  border-radius: 8px;
+  box-shadow: 1px 2px 4px black;
 }
 
 .img-pop-up {
@@ -275,17 +271,33 @@ footer {
 }
 
 .comments-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: flex-start;
   margin-left: 10px;
-  height: 300px;
   font-size: 2vw;
   font-family: "Inter", sans-serif;
-  color: #fff;
-  text-shadow: 1px 1px 1px black;
+  color: black;
+  text-shadow: 1px 1px 1px white;
+}
+
+.comment-counter {
+  border: 2px solid #f2f2f2;
+  border-radius: 50%;
+  padding: 3px;
+  margin-left: 7px;
+}
+
+.comment-count {
+  margin-top: 20px;
+  font-size: 24pt;
 }
 
 .comments-container h4 {
-  border-bottom: 3px solid white;
-  width: 98%;
+  border-bottom: 3px solid rgb(0, 0, 0);
+  margin-top: 10px;
+  width: 24%;
 }
 
 .comments-container ul {
@@ -299,19 +311,27 @@ footer {
   list-style-type: none;
 }
 
+#commentsList {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  gap: 30px;
+}
+
 .input-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-bottom: 20px;
   width: 100%;
   gap: 1vw;
   font-size: 2vw;
+  margin-top: 40px;
   margin-right: 0.7vw;
   font-family: sans-serif;
-  color: white;
-  text-shadow: 1px 1px 1px black;
+  color: black;
+  text-shadow: 1px 1px 1px white;
 }
 
 .input-container h2 {
@@ -321,19 +341,21 @@ footer {
 .underline {
   width: 50px;
   height: 3.5px;
-  background: rgb(255, 255, 255);
-  box-shadow: 1px 1px 1px black;
+  background: rgb(0, 0, 0);
+  box-shadow: 1px 1px 1px rgb(255, 255, 255);
   margin: 5px;
 }
 
 .input-container input {
   width: 80%;
   height: 5vh;
+  padding: 5px;
 }
 
 .input-container textarea {
   width: 80%;
   height: 15vh;
+  padding: 5px;
 }
 
 .submit-btn-container {

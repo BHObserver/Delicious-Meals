@@ -1,56 +1,42 @@
-import postLikes from './postLikes.js';
-import getLikes from './getLikes.js';
-
 const productsDOM = document.querySelector('.products-center');
 
 // display function
 const displayMeals = (list) => {
   const productList = list.meals
     .map((item) => {
-      // console.log(idMeal);
       const { strMeal: title } = item;
       const { strMealThumb: img } = item;
       const { idMeal: id } = item;
-
-      return ` <div class="single-product">
+      return ` <section class="single-product">
       <img
         src="${img}"
         alt="${title}"
         class="single-product-img img"
+        data-id='${id}'
       />
       <div class="product-footer">
-        <h5 class="name">${title}<span class="span" ></span></h5>
-        <h3></h3>
+        <h5 class="name">${title}</h5>
         <div class="btn-container">
-        <button class="btn-like" type="button" data-id="${id}">&#10084 <span class="btn-span">0 likes</span></button>
+        <button class="btn-like" type="button" >&#10084 <span class="btn-span">0 likes</span></button>
         <button class="btn-comment">COMMENTS</button>
         </div>
       </div>
-    </div>`;
+    </section>`;
     })
     .join('');
   productsDOM.innerHTML = `<div class="products-container">
   ${productList}
   </div>`;
-
   const likeBtns = [...document.querySelectorAll('.btn-like')];
   likeBtns.forEach((btn) => {
-    btn.addEventListener('click', async (e) => {
-      const element = e.target;
-
-      const mealId = element.dataset.id;
-      await postLikes(mealId);
-
-      const results = await getLikes();
-
-      const btnSpan = element.querySelector('.btn-span');
+    btn.addEventListener('click', () => {
+      const span = btn.querySelector('.btn-span');
       let count = 0;
-      count += btnSpan.textContent;
+      count += span.textContent;
       const newCount = parseInt(count, 10) + 1;
-      btnSpan.textContent = `${newCount} likes`;
-      localStorage.setItem('likes', JSON.stringify(results));
+      span.textContent = `${newCount} likes`;
+      localStorage.setItem('likes', JSON.stringify(newCount));
     });
   });
 };
-
 export default displayMeals;
