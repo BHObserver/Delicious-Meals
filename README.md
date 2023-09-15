@@ -24,28 +24,27 @@
 
 ### 📖 DELICIOUS MEALS <a name="about-project"></a>
 
-**DELICIUOS MEALS** At "Delious meaks," we don't just serve food; we create memorable experiences that leave you craving more. Come dine with us, and let your taste buds embark on a culinary journey you won't soon forget.
+**DELICIUOS MEALS** At "Delious meals," we don't just serve food; we create memorable experiences that leave you craving more. Come dine with us, and let your taste buds embark on a culinary journey you won't soon forget.
+**DELICIOUS MEALS** is a website that has feature to present multiples meals. It also has the abilty to record comments of users and the meals can be given like through like button.
 
 ### 🛠 Built With <a name="built-with"></a>
 
 <ul>
   <li>HTML5</li>
   <li>CSS3</li>
-  <li>javaScript</li>
+  <li>JavaScript</li>
   <li>ES6</li>
 </ul>
 
 ### Tech Stack <a name="tech-stack"></a>
 
-**HTML5, CSS3, ES6, javaScript**
+**HTML5, CSS3, ES6, JavaScript**
 
 ### Key Features <a name="key-features"></a>
 
-- **Adds and Removes Tasks**
-- **Responsive**
+- **Adds Comments**
 - **Dynamic**
 - **API**
-- **Local Stoarge**
 
 <!-- LIVE DEMO -->
 
