@@ -221,7 +221,6 @@ footer {
 .pop-up::-webkit-scrollbar-thumb {
   background: rgb(124, 199, 226);
   border: 1px solid rgb(230, 194, 16);
-  
   border-radius: 8px 0;
 }
 
@@ -325,7 +324,6 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  
   width: 100%;
   gap: 1vw;
   font-size: 2vw;
