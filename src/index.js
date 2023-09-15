@@ -10,21 +10,6 @@ cancelIconContainer.setAttribute('src', cancelIcon);
 const start = async () => {
   const data = await fetchMeals();
   displayMeals(data);
-  /* const itemId = [];
-  const { meals } = data;
-  meals.forEach((element) => {
-    itemId.push(parseInt(element.idMeal, 10));
-  });
-
-  itemId.forEach((element) => {
-    console.log(fetchCommentsCount(element));
-  }); */
-  /* const commentCounterElement = document.querySelectorAll('.comment-counter');
-  commentCounterElement.forEach((element) => {
-    itemId.forEach((item) => {
-      element.textContent =
-    })
-  }) */
 };
 
 document.addEventListener('DOMContentLoaded', () => {
