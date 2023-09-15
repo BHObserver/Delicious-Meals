@@ -2,8 +2,6 @@ import './style.css';
 import cancelIcon from './assets/cancel-icon.png';
 import fetchMeals from './modules/fetchMeals.js';
 import displayMeals from './modules/displayMeals.js';
-/* import fetchCommentsCount from './modules/commentCounter.js'; */
-import commentCount from './modules/commentCounter.js';
 import show, { cancel } from './modules/commentPopup.js';
 import { submitComment } from './modules/comment.js';
 
