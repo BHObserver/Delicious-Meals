@@ -1,5 +1,8 @@
 // Define the base URL for the Involvement API
+import commentCount from './commentCounter.js';
+
 const apiUrl = 'https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/Y9oi34w1aSiFtzn6asAJ/comments';
+
 // Function to fetch comments for a specific item
 export const fetchComments = async (id) => {
   try {
@@ -9,8 +12,9 @@ export const fetchComments = async (id) => {
     const commentsList = document.getElementById('commentsList');
     commentsList.innerHTML = ''; // Clear previous comments
     comments.forEach((comment) => {
+      console.log(comment);
       const commentItem = document.createElement('li');
-      commentItem.textContent = `${comment.username}: ${comment.comment}`;
+      commentItem.textContent = `${comment.creation_date} >> ${comment.username}: ${comment.comment}`;
       commentsList.appendChild(commentItem);
     });
   } catch (error) {
@@ -61,8 +65,12 @@ export const submitComment = () => {
       const itemId = clickedElement.dataset.id;
       const userNameInput = document.getElementById('userNameInput').value.trim();
       const commentInput = document.getElementById('commentInput').value.trim();
-      comment(itemId, userNameInput, commentInput);
-      fetchComments(itemId);
+      const updateCommentCounting = async () => {
+        await comment(itemId, userNameInput, commentInput);
+        await fetchComments(itemId);
+        commentCount();
+      };
+      updateCommentCounting();
     }
   });
 };
