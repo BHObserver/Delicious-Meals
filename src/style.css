@@ -207,8 +207,9 @@ footer {
   margin: 0 auto;
   max-width: 920px;
   width: 50vw;
+  height: 70%;
   border-radius: 8px;
-  margin-top: 4.5vw;
+  margin-top: 8vw;
   overflow-y: auto;
   overflow-x: hidden;
 }
