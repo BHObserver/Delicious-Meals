@@ -1,6 +1,5 @@
 import postLikes from './postLikes.js';
 import getLikes from './getLikes.js';
-import displayLikes from './displayLikes.js';
 
 const productsDOM = document.querySelector('.products-center');
 
