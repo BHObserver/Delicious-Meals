@@ -12,7 +12,6 @@ export const fetchComments = async (id) => {
     const commentsList = document.getElementById('commentsList');
     commentsList.innerHTML = ''; // Clear previous comments
     comments.forEach((comment) => {
-      console.log(comment);
       const commentItem = document.createElement('li');
       commentItem.textContent = `${comment.creation_date} >> ${comment.username}: ${comment.comment}`;
       commentsList.appendChild(commentItem);
