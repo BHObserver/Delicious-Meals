@@ -17,7 +17,8 @@ const displayMeals = (list) => {
       <div class="product-footer">
         <h5 class="name">${title}</h5>
         <div class="btn-container">
-        <button class="btn-like" type="button" >&#10084 <span class="btn-span">0 likes</span></button>
+        <button class="btn-like" type="button" >&#10084</button>
+        <span class="btn-span"></span><span class='likes-txt'>likes</span>
         <button class="btn-comment">COMMENTS</button>
         </div>
       </div>
