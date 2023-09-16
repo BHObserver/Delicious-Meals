@@ -92,15 +92,15 @@ Example commands:
 
 👤 **Burhan Uddin**
 
-- GitHub: [@bhobserver](https://github.com/bhobserver)
-- Twitter: [@bhobserver](https://twitter.com/BurhanU14173360)
-- linkedIn: [@bhobserver](https://www.linkedin.com/in/bhobserver/)
+- GitHub: (https://github.com/bhobserver)
+- Twitter: (https://twitter.com/BurhanU14173360)
+- linkedIn: (https://www.linkedin.com/in/bhobserver/)
 
 👤 **Umuhan Mohamud**
 
-- GitHub: [@bhobserver](https://github.com/Umuhan)
-- Twitter: [@bhobserver](https://twitter.com/HannyUmuhan)
-- linkedIn: [@bhobserver](https://www.linkedin.com/in/umuhan-mohamud/)
+- GitHub: (https://github.com/Umuhan)
+- Twitter: (https://twitter.com/HannyUmuhan)
+- linkedIn: (https://www.linkedin.com/in/umuhan-mohamud/)
 
 <!-- FUTURE FEATURES -->
 
