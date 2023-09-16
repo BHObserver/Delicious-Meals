@@ -8,6 +8,7 @@ const postLikes = async (id) => {
     },
     body: JSON.stringify({ item_id: id }),
   });
+  console.log(response);
   return response;
 };
 
