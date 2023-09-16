@@ -27,16 +27,5 @@ const displayMeals = (list) => {
   productsDOM.innerHTML = `<div class="products-container">
   ${productList}
   </div>`;
-  const likeBtns = [...document.querySelectorAll('.btn-like')];
-  likeBtns.forEach((btn) => {
-    btn.addEventListener('click', () => {
-      const span = btn.querySelector('.btn-span');
-      let count = 0;
-      count += span.textContent;
-      const newCount = parseInt(count, 10) + 1;
-      span.textContent = `${newCount} likes`;
-      localStorage.setItem('likes', JSON.stringify(newCount));
-    });
-  });
 };
 export default displayMeals;
