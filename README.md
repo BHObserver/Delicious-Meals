@@ -24,8 +24,7 @@
 
 ### 📖 DELICIOUS MEALS <a name="about-project"></a>
 
-**DELICIUOS MEALS** At "Delious meals," we don't just serve food; we create memorable experiences that leave you craving more. Come dine with us, and let your taste buds embark on a culinary journey you won't soon forget.
-**DELICIOUS MEALS** is a website that has feature to present multiples meals. It also has the abilty to record comments of users and the meals can be given like through like button.
+**DELICIUOS MEALS** The Meals App is a user-friendly web application that allows you to explore a wide variety of delicious meals, discover new recipes, and plan your meals effortlessly. Powered by APIs and built using Webpack, JavaScript, HTML, and stylish CSS, this app provides a seamless and enjoyable culinary experience for users.
 
 ### 🛠 Built With <a name="built-with"></a>
 
@@ -92,11 +91,13 @@ Example commands:
 ## 👥 Author <a name="authors"></a>
 
 👤 **Burhan Uddin**
+
 - GitHub: [@bhobserver](https://github.com/bhobserver)
 - Twitter: [@bhobserver](https://twitter.com/BurhanU14173360)
 - linkedIn: [@bhobserver](https://www.linkedin.com/in/bhobserver/)
 
 👤 **Umuhan Mohamud**
+
 - GitHub: [@bhobserver](https://github.com/Umuhan)
 - Twitter: [@bhobserver](https://twitter.com/HannyUmuhan)
 - linkedIn: [@bhobserver](https://www.linkedin.com/in/umuhan-mohamud/)
