@@ -7,10 +7,9 @@ const allLikes = async () => {
 
 const getLikes = async () => {
   const likes = await allLikes();
-  return likes; // Just return the array
+  return likes;
 };
 
-// To use the getLikes function and store the array in a variable:
 const fetchLikes = async () => {
   const likesUpdate = document.querySelectorAll('.btn-span');
   try {
@@ -24,10 +23,8 @@ const fetchLikes = async () => {
       element.textContent = likesArray.shift();
     });
   } catch (error) {
-    // Handle any errors that occurred during the fetch
     console.error('Error fetching likes:', error);
   }
 };
 
-// Call the fetchDataAndStore function to retrieve and store the array
 export default fetchLikes;
