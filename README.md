@@ -92,11 +92,11 @@ Example commands:
 ## 👥 Author <a name="authors"></a>
 
 👤 **Burhan Uddin**
-👤 **Umuhan Mohamud**
-
 - GitHub: [@bhobserver](https://github.com/bhobserver)
 - Twitter: [@bhobserver](https://twitter.com/BurhanU14173360)
 - linkedIn: [@bhobserver](https://www.linkedin.com/in/bhobserver/)
+
+👤 **Umuhan Mohamud**
 - GitHub: [@bhobserver](https://github.com/Umuhan)
 - Twitter: [@bhobserver](https://twitter.com/HannyUmuhan)
 - linkedIn: [@bhobserver](https://www.linkedin.com/in/umuhan-mohamud/)
