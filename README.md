@@ -49,7 +49,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link]
+- http://bh-observer.me/projects/meals/dist/index.html
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
