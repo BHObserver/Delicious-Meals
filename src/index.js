@@ -6,6 +6,7 @@ import show, { cancel } from './modules/commentPopup.js';
 import { submitComment } from './modules/comment.js';
 import itemsCounter from './modules/itemCount.js';
 import fetchLikes from './modules/getLikes.js';
+import addlikes from './modules/addLikes.js';
 
 const cancelIconContainer = document.querySelector('.close-pop-up');
 cancelIconContainer.setAttribute('src', cancelIcon);
@@ -18,11 +19,13 @@ const start = async () => {
 
 document.addEventListener('DOMContentLoaded', () => {
   start();
+  addlikes();
   show();
   submitComment();
 });
 
 document.addEventListener('click', () => {
   show();
+  addlikes();
   cancel();
 });
