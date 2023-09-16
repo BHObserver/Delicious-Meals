@@ -172,7 +172,7 @@ footer {
 
 .btn-span {
   color: #555;
-  font-size: 12px;
+  font-size: 18px;
 }
 
 .btn-comment {
@@ -371,3 +371,11 @@ footer {
   width: 80px;
   height: 30px;
 }
+
+.likes-txt {
+  position: relative;
+  color: #555;
+  font-size: 18px;
+  
+}
+
